@@ -37,14 +37,18 @@ h2 { font-size: 2.2rem; border-left: 5px solid var(--accent); padding-left: 15px
 .hero { display: flex; flex-direction: column; align-items: center; text-align: center; background: var(--bg-panel); padding: 3rem; border-radius: 20px; border: 1px solid rgba(0,224,255,0.2); }
 
 /* Tamanho Duplo para a Index */
+/* No style.css, garante que a classe está assim: */
+/* No style.css, garante que a classe está assim: */
+/* No style.css, garante que a classe está assim: */
 .main-banner {
     width: 100%;
-    max-width: 1000px; 
+    max-width: 1100px; 
     height: auto;
-    margin-top: 2rem;
+    display: block;
+    margin: 2rem auto;
     filter: drop-shadow(0 0 20px var(--accent-glow));
     border: 2px solid var(--accent);
-    border-radius: 15px;
+    border-radius: 15px; /* Curvatura idêntica aos cards e banners das consolas */
 }
 
 /* Tamanho Regular para Consolas */
@@ -69,3 +73,7 @@ h2 { font-size: 2.2rem; border-left: 5px solid var(--accent); padding-left: 15px
 .card { background: rgba(20, 24, 36, 0.8); padding: 2.5rem; border-radius: 15px; border-bottom: 3px solid var(--accent); transition: 0.4s; }
 .card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--accent); }
 footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px; }
+nav a.active {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+}
