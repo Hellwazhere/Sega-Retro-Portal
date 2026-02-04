@@ -14,6 +14,19 @@ body {
     background: radial-gradient(circle at top, #151a33, #07080c);
     color: var(--text-main);
     line-height: 1.75;
+    min-height: 100vh;
+}
+
+/* Camada de Fundo (Circuitos/Grelha) */
+body::before {
+    content: "";
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1; opacity: 0.1; pointer-events: none;
+    background-image: 
+        linear-gradient(var(--accent) 1px, transparent 1px),
+        linear-gradient(90deg, var(--accent) 1px, transparent 1px),
+        radial-gradient(var(--accent) 1px, transparent 1px);
+    background-size: 60px 60px, 60px 60px, 30px 30px;
 }
 
 /* CRT Effect */
@@ -23,6 +36,7 @@ body::after {
     pointer-events: none; z-index: 999;
 }
 
+/* Header & Nav */
 header { background: rgba(15, 18, 32, 0.9); padding: 3rem 1rem; border-bottom: 2px solid var(--accent); text-align: center; }
 header h1 { font-size: 3rem; color: var(--accent); text-transform: uppercase; letter-spacing: 4px; }
 nav { margin-top: 2rem; }
@@ -31,49 +45,45 @@ nav a:hover { color: var(--accent); text-shadow: 0 0 10px var(--accent-glow); }
 
 main { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
 section { margin-bottom: 5rem; }
-h2 { font-size: 2.2rem; border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 2.5rem; display: inline-block; }
 
-/* ===== Banner Logic ===== */
-.hero { display: flex; flex-direction: column; align-items: center; text-align: center; background: var(--bg-panel); padding: 3rem; border-radius: 20px; border: 1px solid rgba(0,224,255,0.2); }
-
-/* Tamanho Duplo para a Index */
-/* No style.css, garante que a classe está assim: */
-/* No style.css, garante que a classe está assim: */
-/* No style.css, garante que a classe está assim: */
-.main-banner {
-    width: 100%;
-    max-width: 1100px; 
-    height: auto;
-    display: block;
-    margin: 2rem auto;
-    filter: drop-shadow(0 0 20px var(--accent-glow));
-    border: 2px solid var(--accent);
-    border-radius: 15px; /* Curvatura idêntica aos cards e banners das consolas */
+/* Títulos H2 (Tiras removidas) */
+h2 { 
+    font-size: 2.2rem; border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 2.5rem; 
+    display: inline-block; background: transparent !important; padding-right: 0 !important;
 }
 
-/* Tamanho Regular para Consolas */
-.console-banner {
-    width: 100%;
-    max-width: 500px; 
-    height: auto;
-    margin-top: 2rem;
-    border: 2px solid var(--accent);
-    border-radius: 10px;
-    box-shadow: 0 0 20px var(--accent-glow); /* Garante o efeito de brilho */
-}
+/* Hero & Banners */
+.hero { display: flex; flex-direction: column; align-items: center; text-align: center; background: rgba(20, 24, 36, 0.85); backdrop-filter: blur(5px); padding: 3rem; border-radius: 20px; border: 1px solid rgba(0,224,255,0.2); }
+.main-banner { width: 100%; max-width: 1000px; height: auto; margin-top: 2rem; filter: drop-shadow(0 0 20px var(--accent-glow)); border: 2px solid var(--accent); border-radius: 15px; }
 
-/* ===== Gallery & Cards ===== */
+/* Cards e Gallery (Centrados) */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.card { background: rgba(20, 24, 36, 0.8); padding: 2.5rem; border-radius: 15px; border-bottom: 3px solid var(--accent); text-align: center; }
+.card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--accent); transition: 0.3s; }
+.card img:hover { transform: scale(1.03); box-shadow: 0 0 15px var(--accent-glow); }
+
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 2rem; }
-.gallery-item { border-radius: 10px; border: 1px solid var(--accent); overflow: hidden; background: #000; transition: 0.3s; }
+.gallery-item { border-radius: 10px; border: 1px solid var(--accent); overflow: hidden; background: #000; transition: 0.3s; display: flex; flex-direction: column; align-items: center; }
 .gallery-item:hover { transform: scale(1.05); box-shadow: 0 0 20px var(--accent-glow); }
 .gallery-item img { width: 100%; height: 200px; object-fit: cover; }
-.gallery-item span { display: block; padding: 10px; text-align: center; font-size: 0.8rem; color: var(--accent); }
+.gallery-item span { display: block; width: 100%; padding: 12px; text-align: center; font-size: 0.9rem; color: var(--accent); font-weight: bold; }
 
-.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-.card { background: rgba(20, 24, 36, 0.8); padding: 2.5rem; border-radius: 15px; border-bottom: 3px solid var(--accent); transition: 0.4s; }
-.card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--accent); }
-footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px; }
-nav a.active {
-    color: var(--accent);
-    border-bottom: 1px solid var(--accent);
+/* zoom*/
+.modal {
+    display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9); backdrop-filter: blur(5px);
+    justify-content: center; align-items: center; flex-direction: column;
 }
+.modal-content {
+    margin: auto; display: block; width: 80%; max-width: 900px;
+    border: 3px solid var(--accent); box-shadow: 0 0 30px var(--accent-glow);
+    animation: zoom 0.3s;
+}
+#caption { margin: auto; display: block; width: 80%; text-align: center; color: var(--accent); padding: 15px 0; font-size: 1.5rem; font-weight: bold; }
+
+@keyframes zoom { from {transform:scale(0)} to {transform:scale(1)} }
+
+.close { position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.close:hover { color: var(--accent); }
+
+footer { text-align: center; padding: 3rem; color: var(--text-muted); font-size: 0.8rem; letter-spacing: 2px; }
