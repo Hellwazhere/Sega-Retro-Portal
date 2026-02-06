@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sega Retro | Galeria Visual</title>
+    <title>Sega Retro | Archive Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>Archive Gallery</h1>
         <nav>
-    <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="gallery.html">Gallery</a> 
-    <a href="megadrive.html">Mega Drive</a>
-    <a href="saturn.html">Saturn</a>
-    <a href="dreamcast.html">Dreamcast</a>
-    <a href="about.html">About</a>
-</nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="archive.html">Archive</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="ourpicks.html">Our Picks</a>
+        <a href="megadrive.html">Mega Drive</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="dreamcast.html">Dreamcast</a>
+        <a href="about.html">About</a>
+        </nav>
     </header>
 
     <main>
@@ -33,27 +34,22 @@
                     <img src="images/kidgames.png" alt="Kid Games">
                     <span>Kid Games Era</span>
                 </div>
-                
                 <div class="gallery-item">
                     <img src="images/mallarcades.png" alt="Mall Arcades">
                     <span>Mall Arcades</span>
                 </div>
-                
                 <div class="gallery-item">
                     <img src="images/roomplaying.png" alt="Room Playing">
                     <span>Classic Gaming Room</span>
                 </div>
-                
                 <div class="gallery-item">
                     <img src="images/shoppinggames.png" alt="Shopping Games">
                     <span>Shopping Centers</span>
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/arcadesfamily.png" alt="Arcades Family">
                     <span>Family Arcade Experience</span>
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/familygames.png" alt="Family Games">
                     <span>Home Console Gaming</span>
@@ -62,52 +58,22 @@
         </section>
 
         <section style="margin-top: 4rem; text-align: center;">
-            <div class="hero" style="padding: 2rem; border-color: var(--accent-soft);">
-                <h3>Want so share your retro goodies with us?</h3>
+            <div class="hero" style="padding: 2rem; border-color: rgba(0, 224, 255, 0.3);">
+                <h3>Want to share your retro goodies with us?</h3>
                 <p>Do you have any vintage photographs or rare screenshots from the Sega era?</p>
-                <a href="about.html#contact-section" style="color: var(--accent); text-decoration: none; font-weight: bold; border: 1px solid var(--accent); padding: 10px 20px; border-radius: 5px;">Send Memories</a>
+                <a href="about.html#contact-section" style="color: var(--accent); text-decoration: none; font-weight: bold; border: 1px solid var(--accent); padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 1rem;">Send Memories</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        // CHRONO-GALLERY SYNC COMPLETE // SEGA RETRO PORTAL 2026
-    </footer>
+    <footer>// CHRONO-GALLERY SYNC COMPLETE // SEGA RETRO PORTAL 2026</footer>
 
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgExpanded">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="imgExpanded">
-    <div id="caption"></div>
-</div>
-
-<script>
-    // Selecionar elementos
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("imgExpanded");
-    const captionText = document.getElementById("caption");
-    const images = document.querySelectorAll(".gallery-item img");
-
-    // Adicionar evento de clique em cada imagem da galeria
-    images.forEach(img => {
-        img.onclick = function() {
-            modal.style.display = "flex";
-            modalImg.src = this.src;
-            // Usa o texto do span/p que está abaixo da imagem como legenda
-            captionText.innerHTML = this.parentElement.querySelector('span, p').innerHTML;
-        }
-    });
-
-    // Fechar o modal ao clicar no X
-    document.querySelector(".close").onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // Fechar o modal ao clicar fora da imagem
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>

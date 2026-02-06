@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sega Retro | The Absolute Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #archive-container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        .archive-year-block { background: var(--bg-panel); border: 1px solid var(--accent); margin-bottom: 0.5rem; border-radius: 4px; overflow: hidden; }
+        .archive-header { padding: 1.2rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; background: rgba(0, 224, 255, 0.05); }
+        .archive-content { display: none; padding: 1rem; background: rgba(0, 0, 0, 0.4); border-top: 1px solid var(--accent); }
+        .archive-content ul { list-style: none; padding: 0; }
+        .archive-content li { padding: 8px 0; border-bottom: 1px solid #222; font-size: 0.9rem; }
+        .archive-type { font-size: 0.7rem; color: #000; background: var(--accent); padding: 2px 5px; border-radius: 3px; margin-right: 8px; font-weight: bold; }
+        .archive-year-block.active .archive-content { display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historical Archive</h1>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="archive.html">Archive</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="ourpicks.html">Our Picks</a>
+        <a href="megadrive.html">Mega Drive</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="dreamcast.html">Dreamcast</a>
+        <a href="about.html">About</a></nav>
+    </header>
+    <main id="archive-container">
+        <h2 style="text-align:center;">Chronology: 1985 — 2026</h2>
+        <div id="archive-list">Loading data stream...</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

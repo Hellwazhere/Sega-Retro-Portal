@@ -3,141 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sega Retro  | Home</title>
+    <title>Sega Retro | Home</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Gallery specific styles */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 2rem;
-        }
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            border: 1px solid var(--accent);
-            box-shadow: 0 0 10px var(--accent-glow);
-            transition: transform 0.3s ease;
-        }
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px var(--accent-glow);
-        }
-        .gallery-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Sega Retro Portal</h1>
-       <nav>
-    <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="gallery.html">Gallery</a> 
-    <a href="megadrive.html">Mega Drive</a>
-    <a href="saturn.html">Saturn</a>
-    <a href="dreamcast.html">Dreamcast</a>
-    <a href="about.html">About</a>
-</nav>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="archive.html">Archive</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="ourpicks.html">Our Picks</a>
+        <a href="megadrive.html">Mega Drive</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="dreamcast.html">Dreamcast</a>
+        <a href="about.html">About</a>
+        </nav>
     </header>
 
     <main>
         <section class="hero">
             <div class="story-text">
-                <h2 style="display: block; text-align: center; border: none; padding: 0; width: 100%;">Welcome to the 128-Bit Portal</h2>
-                <p>SEGA wasn't just a brand; it was an attitude. Relive the classics that changed the world of gaming with cutting-edge technology and visionary design.</p>
-            </div>
+                <h2>Welcome to the 128-Bit Portal!</h2> 
+            </div> 
             <img src="images/homebanner.png" alt="Sega Console Collection" class="main-banner">
         </section>
 
         <section>
-            <h2 style="display: block; text-align: center; border: none; padding: 0; width: 100%;"> Visual Evolution</h2>
+            <h2>Visual Evolution</h2>
             <div class="card-grid">
                 <div class="card">
-                    <img src="images/controllers.jpg" alt="Controller Evolution" style="width:100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--accent);">
+                    <img src="images/controllers.jpg" alt="Controllers">
                     <h3>Form Factor</h3>
                     <p>From the 3-button classic to the ergonomic Dreamcast controller.</p>
                 </div>
                 <div class="card">
-                    <img src="images/arcades.png" alt="Retro Arcade" style="width:100%; border-radius: 8px; margin-bottom: 1rem; border: 1px solid var(--accent);">
+                    <img src="images/arcades.png" alt="Arcades">
                     <h3>Arcade Heritage</h3>
                     <p>Every Sega console was a bridge to the arcade experience.</p>
                 </div>
             </div>
         </section>
 
-        <section id="gallery" style="margin-top: 4rem;">
-            <h2 style="display: block; text-align: center; border: none; padding: 0; width: 100%;">Hardware Archive Gallery</h2>
-            <p style="text-align: center;">The machines that defined the "Sega Age".</p>
-            
+        <section id="gallery">
+            <h2>The Sega Collection</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/lotsofit.png">
+                    <img src="images/thegames.png" alt="Hardware">
+                    <span>The Games</span>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/dreamcast22.png">
+                    <img src="images/dreamcast.jpg" alt="Dreamcast">
+                    <span>Dreamcast Console</span>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/arcades222.png" alt="Sonic The Hedgehog Art">
+                    <img src="images/megadrive.png" alt="Mega Drive">
+                    <span>Mega Drive Console</span>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/megadrive222.png" alt="Retro Game Library">
+                    <img src="images/saturn.png" alt="Saturn">
+                    <span>Saturn Console</span>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/megadrive22.png" alt="Vaporwave Aesthetic">
+                    <img src="images/gamegear.png" alt="Game Gear">
+                    <span>Game Gear</span>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/saturn22.png" alt="Online Gaming Roots">
+                    <img src="images/segacd.png" alt="Sega CD">
+                    <span>Sega CD</span>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>// SYSTEM READY // SEGA RETRO PORTAL 2026</footer>
+
     <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="imgExpanded">
-    <div id="caption"></div>
-</div>
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgExpanded">
+        <div id="caption"></div>
+    </div>
 
-<script>
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("imgExpanded");
-    const captionText = document.getElementById("caption");
-    
-    // Seleciona imagens dos cards e da galeria, ignorando o banner principal
-    const images = document.querySelectorAll(".card img, .gallery-item img");
-
-    images.forEach(img => {
-        img.style.cursor = "pointer"; // Adiciona o cursor de clique via JS
-        img.onclick = function() {
-            modal.style.display = "flex";
-            modalImg.src = this.src;
-            
-            // Tenta encontrar uma legenda no card ou no item da galeria
-            let caption = "";
-            if(this.parentElement.querySelector('h3')) {
-                caption = this.parentElement.querySelector('h3').innerText;
-            } else if (this.parentElement.querySelector('span, p')) {
-                caption = this.parentElement.querySelector('span, p').innerText;
-            }
-            captionText.innerHTML = caption;
-        }
-    });
-
-    document.querySelector(".close").onclick = function() { 
-        modal.style.display = "none"; 
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) { modal.style.display = "none"; }
-    }
-</script>
+    <script src="script.js"></script>
 </body>
 </html>

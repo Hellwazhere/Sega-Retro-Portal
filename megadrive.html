@@ -6,18 +6,19 @@
     <title>Sega Retro | Mega Drive</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body> 
     <header>
         <h1>Mega Drive</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="news.html">News</a>
-            <a href="gallery.html">Gallery</a> 
-            <a href="megadrive.html">Mega Drive</a>
-            <a href="saturn.html">Saturn</a>
-            <a href="dreamcast.html">Dreamcast</a>
-            <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="archive.html">Archive</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="ourpicks.html">Our Picks</a>
+        <a href="megadrive.html">Mega Drive</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="dreamcast.html">Dreamcast</a>
+        <a href="about.html">About</a>
         </nav>
     </header>
 
@@ -25,42 +26,46 @@
         <section class="hero">
             <div class="story-text">
                 <h2 style="display: block; text-align: center; border: none; padding: 0; width: 100%;">The 16-Bit Powerhouse</h2>
-                <p>Launched in Japan in 1988, the Mega Drive (Genesis in North America) defined the "console wars". It was the machine that brought the "cool factor" to gaming, challenging the status quo with fast-paced arcade ports and an edgy marketing campaign that "did what Nintendon't".</p>
+                <p>Launched in Japan in 1988, the Mega Drive defined the "console wars". It brought the "cool factor" to gaming, challenging the status quo with fast-paced arcade ports and marketing that "did what Nintendon't".</p>
             </div>
-            <img src="images/megadrive222.png" alt="Sega Mega Drive Console" class="main-banner">
+            <img src="images/megadrive.png" alt="Sega Mega Drive" class="main-banner">
         </section>
 
         <section>
             <div class="card-grid">
                 <div class="card">
                     <h3>The Origin</h3>
-                    <p><strong>Arcade DNA</strong></p>
-                    <p>Designed to bring Sega's System 16 arcade board experience home, it featured the powerful Motorola 68000 CPU. It allowed for nearly perfect conversions of hits like <em>Altered Beast</em> and <em>Golden Axe</em>.</p>
+                    <p><strong>Arcade at Home</strong></p>
+                    <p>Powered by the Motorola 68000, it was designed to bring Sega's massive arcade hits like <em>Altered Beast</em> and <em>Golden Axe</em> into the living room with near-perfect accuracy.</p>
                 </div>
 
                 <div class="card">
                     <h3>The Peak</h3>
                     <p><strong>Blast Processing & Sonic</strong></p>
-                    <p>The arrival of <em>Sonic The Hedgehog</em> in 1991 changed everything. With its high-speed scrolling and "Blast Processing" capabilities, the Mega Drive became the undisputed king of the early 90s action games.</p>
+                    <p>The arrival of <em>Sonic The Hedgehog</em> in 1991 changed everything. Its high-speed scrolling and "Blast Processing" made the Mega Drive the king of 90s action.</p>
                 </div>
 
                 <div class="card">
                     <h3>The Demise</h3>
                     <p><strong>Add-on Overload</strong></p>
-                    <p>While successful, the ecosystem became fragmented with the 32X and Sega CD expansions. These high costs and technical confusion eventually led Sega to focus their resources on the next generation.</p>
+                    <p>The ecosystem became fragmented with the 32X and Sega CD. Technical confusion eventually led Sega to focus on the next generation.</p>
                 </div>
             </div>
         </section>
 
         <section class="hero" style="margin-top: 4rem; padding: 2rem; border-color: #2ecc71;">
             <h3 style="color: #2ecc71;">Pro Tip for Collectors</h3>
-            <p>Always check for the "High Definition Graphics" text on the Model 1 consoles! These early units are famous for having the best audio chips (YM2612), providing that crunchy, iconic FM synth sound.</p>
+            <p>Look for the "High Definition Graphics" text on Model 1 consoles! These early units have the best audio chips (YM2612) for that iconic FM synth sound.</p>
         </section>
     </main>
 
-    <footer>
-        // 16-BIT BUS ACTIVE // SEGA RETRO PORTAL 2026
-    </footer>
+    <footer>// 16-BIT BUS ACTIVE // SEGA RETRO PORTAL 2026</footer>
 
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgExpanded">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
