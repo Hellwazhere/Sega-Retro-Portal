@@ -489,6 +489,20 @@
       "link": "https://www.gematsu.com/tag/jet-set-radio"
     },
     {
+      "date": "2026-01-15",
+      "type": "Intel",
+      "event": "Several mini-games and retro games in Yakuza Kiwami 3 & Dark Ties revealed and detailed",
+      "image": "images/2025-01-15.webp",
+      "link": "https://segabits.com/blog/2026/01/15/several-mini-games-and-retro-games-in-yakuza-kiwami-3-dark-ties-revealed-and-detailed/#more-85187"
+    },
+    {
+      "date": "2025-02-02",
+      "type": "Intel",
+      "event": "Sega Saturn Does Ray Tracing - And No, We're Not Joking",
+      "image": "images/2025-02-02.webp",
+      "link": "https://www.digitalfoundry.net/news/2026/02/sega-saturn-does-ray-tracing-and-no-were-not-joking"
+    },
+    {
       "date": "2025-02-15",
       "type": "Game",
       "event": "Virtua Fighter Reboot: Rumors of eSports focus surface.",
@@ -500,7 +514,7 @@
       "type": "Game",
       "event": "Like a Dragon: Pirate Yakuza in Hawaii official launch.",
       "image": "images/2025-02-21.webp",
-      "link": "https://ryu-ga-gotoku.com/pirate/"
+      "link": "https://www.youtube.com/watch?v=WWlGc0sSQTk"
     },
     {
       "date": "2025-03-15",
@@ -509,23 +523,73 @@
       "image": "images/2025-03-15.webp",
       "link": "https://www.sega.com"
     },
-   
-
+       {
+      "date": "2025-03-15",
+      "type": "Game",
+      "event": "Panzer Dragoon Zwei: Remake Demo Official Gameplay Footage.",
+      "image": "images/2025-09-25.webp",
+      "link": "https://panzerdragoonlegacy.com/news/panzer-dragoon-zwei-remake-demo-official-gameplay-footage"
+    },
+     {
+      "date": "2025-09-05",
+      "type": "Game",
+      "event": "Sega promises fewer new games but deeper investments in Sonic, Atlus, and Like a Dragon",
+      "image": "images/2025-09-05.webp",
+      "link": "https://www.videogameschronicle.com/news/sega-promises-fewer-new-games-but-deeper-investments-in-sonic-atlus-and-like-a-dragon/"
+    },
     {
-      "date": "2025-10-01",
+      "date": "2025-03-15",
+      "type": "Game",
+      "event": "SEGA and Ryu Ga Gotoku Studio’s Project Century officially titled STRANGER THAN HEAVEN.",
+      "image": "images/2025-06-06.webp",
+      "link": "https://www.gematsu.com/2025/06/sega-and-ryu-ga-gotoku-studios-project-century-officially-titled-stranger-than-heaven"
+    },
+    {
+      "date": "2025-03-13",
+      "type": "Game",
+      "event": "Sega sees console game profits grow by 28.3% despite halved number of new releases ",
+      "image": "images/2025-03-13.webp",
+      "link": "https://www.gematsu.com/2025/06/sega-and-ryu-ga-gotoku-studios-project-century-officially-titled-stranger-than-heaven"
+    },
+    {
+      "date": "2025-09-09",
+      "type": "Game",
+      "event": "SEGA / ATLUS announces TGS 2025 lineup.",
+      "image": "images/2025-09-09.webp",
+      "link": "https://www.gematsu.com/2025/09/sega-atlus-announces-tgs-2025-lineup"
+    },
+    {
+      "date": "2025-09-09",
+      "type": "Game",
+      "event": "SEGA Admits New Game Sales “Fell Short Of Expectations” In 2025, Says “Complete Editions” Partly To Blame.",
+      "image": "images/2025-11-27.webp",
+      "link": "https://boundingintocomics.com/video-games/sega-complete-editions-2025-sales-slump"
+    },
+    {
+      "date": "2025-14-10",
+      "type": "Game",
+      "event": "SHINOBI: Art of Vengeance DLC ‘SEGA Villains Stage’ adds Goro Majima.",
+      "image": "images/2025-14-10.webp",
+      "link": "https://www.gematsu.com/2025/10/shinobi-art-of-vengeance-dlc-sega-villains-stage-adds-goro-majima"
+    },
+  
+    {
+      "date": "2025-09-25",
       "type": "Game",
       "event": "Sega Says Its Crazy Taxi Reboot Is a Triple-A Game",
       "image": "images/2025-10-01.webp",
       "link": "https://www.ign.com/articles/sega-says-its-crazy-taxi-reboot-is-a-triple-a-game"
+    
     }
+    
   ],
   "2026": [
     {
       "date": "2026-02-07",
       "type": "Game",
-      "event": "Panzer Dragoon Saga: The mystery of the lost source code.",
+      "event": "https://www.timeextension.com/news/2026/02/panzer-dragoon-sagas-pc-port-was-abandoned-in-2020-but-its-developer-is-motivated-to-work-on-it-again",
       "image": "images/2026-02-07.webp",
-      "link": "https://www.panzerdragoonworld.com"
+      "link": "https://www.timeextension.com/news/2026/02/panzer-dragoon-sagas-pc-port-was-abandoned-in-2020-but-its-developer-is-motivated-to-work-on-it-again"
     },
     {
       "date": "2025-06-23",
