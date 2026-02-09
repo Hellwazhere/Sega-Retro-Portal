@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sega Retro | Our Picks</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .picks-hero .carousel-title { border-bottom: none; }
+        .card h3 {
+            margin-bottom: 1.2rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .release-date {
+            display: block;
+            margin-top: 0.6rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,41 +32,181 @@
             <a href="archive.html">Archive</a> 
             <a href="gallery.html">Gallery</a> 
             <a href="ourpicks.html">Our Picks</a>
-            <a href="megadrive.html">Mega Drive</a>
-            <a href="saturn.html">Saturn</a>
-            <a href="dreamcast.html">Dreamcast</a>
+            <div class="nav-dropdown">
+                <button class="nav-dropbtn" type="button">Consoles</button>
+                <div class="nav-dropdown-content">
+                    <a href="megadrive.html">Mega Drive</a>
+                    <a href="saturn.html">Saturn</a>
+                    <a href="dreamcast.html">Dreamcast</a>
+                </div>
+            </div>
             <a href="about.html">About</a>
         </nav>
     </header>
 
     <main>
+        <div class="carousel-box picks-hero">
+            <div class="carousel-title">
+                <h2>Our Picks</h2>
+            </div>
+        </div>
+        <section>
+            <h2>Master System</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/AlexKiddInMiracleWorldBox.jpg" alt="Alex Kidd in Miracle World">
+                    <h3>Alex Kidd in Miracle World</h3>
+                    <p>Sega's original mascot and a pack-in that defined early Master System platforming.<br><span class="release-date">Release: 1986</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Fantasy_zone_arcadeflyer.PNG" alt="Fantasy Zone">
+                    <h3>Fantasy Zone</h3>
+                    <p>A colorful shooter and early Sega mascot showcase.<br><span class="release-date">Release: 1986</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Out_Run_Coverart.png" alt="Out Run">
+                    <h3>Out Run</h3>
+                    <p>A stylish Master System take on Sega's iconic arcade racer.<br><span class="release-date">Release: 1987</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Phantasy_Star_MS_cover.png" alt="Phantasy Star">
+                    <h3>Phantasy Star</h3>
+                    <p>One of the first console JRPGs, known for its scope and 3D dungeons.<br><span class="release-date">Release: 1987</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Shinobi_sales_flyer.png" alt="Shinobi">
+                    <h3>Shinobi</h3>
+                    <p>Arcade ninja action translated to 8-bit with strong atmosphere.<br><span class="release-date">Release: 1987</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/Bubble_bobble.jpg" alt="Bubble Bobble">
+                    <h3>Bubble Bobble</h3>
+                    <p>Iconic co-op platformer that translated well to 8-bit.<br><span class="release-date">Release: 1988</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e6/Ddragon_chirashi.jpg" alt="Double Dragon">
+                    <h3>Double Dragon</h3>
+                    <p>A defining beat 'em up adapted for Sega's 8-bit console.<br><span class="release-date">Release: 1988</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/R-Type_arcade_flyer.jpg" alt="R-Type">
+                    <h3>R-Type</h3>
+                    <p>A demanding shooter port that pushed the system's limits.<br><span class="release-date">Release: 1988</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/PsychoFoxUSBoxShotSMS.jpg" alt="Psycho Fox">
+                    <h3>Psycho Fox</h3>
+                    <p>Creative platforming with character-switching mechanics.<br><span class="release-date">Release: 1989</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/be/Wonder_Boy_III_-_The_Dragon%27s_Trap_boxart.jpg" alt="Wonder Boy III: The Dragon's Trap">
+                    <h3>Wonder Boy III: The Dragon's Trap</h3>
+                    <p>A landmark action-adventure with non-linear exploration on 8-bit hardware.<br><span class="release-date">Release: 1989</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/Castle_of_illusion_Mickey_mouse.jpg" alt="Castle of Illusion Starring Mickey Mouse">
+                    <h3>Castle of Illusion Starring Mickey Mouse</h3>
+                    <p>The Illusion series debut and a flagship Sega platformer.<br><span class="release-date">Release: 1990</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/2b/Golden_Axe_Warrior.PNG" alt="Golden Axe Warrior">
+                    <h3>Golden Axe Warrior</h3>
+                    <p>A Zelda-like action-adventure spin-off in the Golden Axe universe.<br><span class="release-date">Release: 1991</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Sonic1GGCoverArt.jpg" alt="Sonic the Hedgehog (8-bit)">
+                    <h3>Sonic the Hedgehog (8-bit)</h3>
+                    <p>A distinct 8-bit Sonic with its own levels and pacing.<br><span class="release-date">Release: 1991</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Master_of_Darkness_Coverart.png" alt="Master of Darkness">
+                    <h3>Master of Darkness</h3>
+                    <p>A gothic action-platformer often compared to Castlevania.<br><span class="release-date">Release: 1992</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/4e/Land_of_Illusion_starring_Mickey_Mouse_Coverart.png" alt="Land of Illusion Starring Mickey Mouse">
+                    <h3>Land of Illusion Starring Mickey Mouse</h3>
+                    <p>Late-era Disney platformer praised for animation and design.<br><span class="release-date">Release: 1993</span></p>
+                </div>
+            </div>
+        </section>
         <section>
             <h2>Mega Drive Masterpieces</h2>
             <div class="card-grid">
                 <div class="card">
-                    <img src="images/sonic2.webp" alt="Sonic 2">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/AlexKiddInMiracleWorldBox.jpg" alt="Alex Kidd in Miracle World">
+                    <h3>Alex Kidd in Miracle World</h3>
+                    <p>Early Sega mascot platformer, influential for its design and wide distribution.<br><span class="release-date">Release: 1986</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Out_Run_Coverart.png" alt="OutRun">
+                    <h3>OutRun</h3>
+                    <p>A landmark arcade racer that defined high-speed arcade ports.<br><span class="release-date">Release: 1986</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Columns.jpeg" alt="Columns">
+                    <h3>Columns</h3>
+                    <p>A major puzzle title that competed with other falling-block games of the era.<br><span class="release-date">Release: 1989</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Golden_Axe_Promo_Flyer.jpeg" alt="Golden Axe">
+                    <h3>Golden Axe</h3>
+                    <p>A definitive action-fantasy brawler that was a staple of arcades and consoles alike.<br><span class="release-date">Release: 1989</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/be/Wonder_Boy_III_-_The_Dragon%27s_Trap_boxart.jpg" alt="Wonder Boy III: The Dragon's Trap">
+                    <h3>Wonder Boy III: The Dragon's Trap</h3>
+                    <p>A celebrated action-platformer with non-linear exploration and memorable music.<br><span class="release-date">Release: 1989</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/ToeJam_%26_Earl.png" alt="ToeJam & Earl">
+                    <h3>ToeJam & Earl</h3>
+                    <p>A unique, funky co-op roguelike that stood out on the Genesis/Mega Drive.<br><span class="release-date">Release: 1991</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c8/Ecco-cover.jpg" alt="Ecco the Dolphin">
+                    <h3>Ecco the Dolphin</h3>
+                    <p>An ambitious, atmospheric title that pushed audio and level design on the system.<br><span class="release-date">Release: 1992</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Shining_Force.jpg" alt="Shining Force">
+                    <h3>Shining Force</h3>
+                    <p>A landmark tactical RPG that helped define strategy gameplay on consoles.<br><span class="release-date">Release: 1992</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Sonic_2_US_Cover.jpg" alt="Sonic 2">
                     <h3>Sonic the Hedgehog 2</h3>
-                    <p><strong>Historical Impact:</strong> The definitive 16-bit platformer. It introduced "Tails" and the Super Sonic transformation.</p>
+                    <p>The definitive 16-bit platformer. It introduced "Tails" and the Super Sonic transformation.<br><span class="release-date">Release: 1992</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/streetsrage2.webp" alt="Streets of Rage 2">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/26/Streets_of_Rage_2.jpg" alt="Streets of Rage 2">
                     <h3>Streets of Rage 2</h3>
-                    <p><strong>Historical Impact:</strong> Often cited as the best beat 'em up ever made. Legendary soundtrack by Yuzo Koshiro.</p>
+                    <p>Often cited as the best beat 'em up ever made. Legendary soundtrack by Yuzo Koshiro.<br><span class="release-date">Release: 1992</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/phantasystar4.webp" alt="Phantasy Star IV">
-                    <h3>Phantasy Star IV</h3>
-                    <p><strong>Historical Impact:</strong> A cinematic RPG masterpiece with complex, emotional storytelling.</p>
-                </div>
-                <div class="card">
-                    <img src="images/gunstar.webp" alt="Gunstar Heroes">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Gunstar_Heroes.jpg" alt="Gunstar Heroes">
                     <h3>Gunstar Heroes</h3>
-                    <p><strong>Historical Impact:</strong> Pushed the hardware to its absolute limits with incredible action.</p>
+                    <p>Pushed the hardware to its absolute limits with incredible action.<br><span class="release-date">Release: 1993</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/shinobi3.webp" alt="Shinobi III">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Phantasy_Star_EotM_cover.jpg" alt="Phantasy Star IV">
+                    <h3>Phantasy Star IV</h3>
+                    <p>A cinematic RPG masterpiece with complex, emotional storytelling.<br><span class="release-date">Release: 1993</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Shinobi_III_Return_of_the_Ninja_Master.jpg" alt="Shinobi III">
                     <h3>Shinobi III</h3>
-                    <p><strong>Historical Impact:</strong> The peak of ninja action games with fluid animation and tight controls.</p>
+                    <p>The peak of ninja action games with fluid animation and tight controls.<br><span class="release-date">Release: 1993</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/af/Castlevania_Bloodlines.jpg" alt="Castlevania: Bloodlines">
+                    <h3>Castlevania: Bloodlines</h3>
+                    <p>One of the best action-platformers on the Mega Drive with iconic level design.<br><span class="release-date">Release: 1994</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/19/Comix_Zone_Cover.jpeg" alt="Comix Zone">
+                    <h3>Comix Zone</h3>
+                    <p>Innovative comic-book presentation and combat mechanics on the Mega Drive.<br><span class="release-date">Release: 1995</span></p>
                 </div>
             </div>
         </section>
@@ -58,29 +215,79 @@
             <h2>Saturn Essentials</h2>
             <div class="card-grid">
                 <div class="card">
-                    <img src="images/nights.webp" alt="Nights into Dreams">
-                    <h3>Nights into Dreams...</h3>
-                    <p><strong>Historical Impact:</strong> Introduced the analog controller, changing how we navigate 3D spaces.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/VirtuaFighter_arcadeflyer.png" alt="Virtua Fighter">
+                    <h3>Virtua Fighter</h3>
+                    <p>The franchise that shaped 3D fighting mechanics on home consoles.<br><span class="release-date">Release: 1994</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/panzerzwei.webp" alt="Panzer Dragoon II">
-                    <h3>Panzer Dragoon II Zwei</h3>
-                    <p><strong>Historical Impact:</strong> An artistic triumph showcasing the Saturn's unique 3D capabilities.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Daytona_USA_arcade_flyer.jpg" alt="Daytona USA">
+                    <h3>Daytona USA</h3>
+                    <p>One of the most successful arcade racers, with a popular Saturn port.<br><span class="release-date">Release: 1995</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/virtuafighter2.webp" alt="Virtua Fighter 2">
-                    <h3>Virtua Fighter 2</h3>
-                    <p><strong>Historical Impact:</strong> A technical marvel running at 60fps in high resolution.</p>
-                </div>
-                <div class="card">
-                    <img src="images/segarally.webp" alt="Sega Rally">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Sega_Rally_flyer.jpg" alt="Sega Rally">
                     <h3>Sega Rally Championship</h3>
-                    <p><strong>Historical Impact:</strong> The "perfect" arcade port that set the standard for racing physics.</p>
+                    <p>The "perfect" arcade port that set the standard for racing physics.<br><span class="release-date">Release: 1995</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/guardianheroes.webp" alt="Guardian Heroes">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/ca/Virtuacop.jpg" alt="Virtua Cop">
+                    <h3>Virtua Cop</h3>
+                    <p>A landmark light-gun shooter and one of Saturn's standout arcade conversions.<br><span class="release-date">Release: 1995</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Virtua-fighter-2-box.jpg" alt="Virtua Fighter 2">
+                    <h3>Virtua Fighter 2</h3>
+                    <p>A technical marvel running at 60fps in high resolution.<br><span class="release-date">Release: 1995</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Dragon_Force_Coverart.png" alt="Dragon Force">
+                    <h3>Dragon Force</h3>
+                    <p>Massive scale strategy and hundreds of characters made it a Saturn classic.<br><span class="release-date">Release: 1996</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/69/GH_front_cover.jpg" alt="Guardian Heroes">
                     <h3>Guardian Heroes</h3>
-                    <p><strong>Historical Impact:</strong> A 2D RPG/Beat-em-up hybrid and a testament to Saturn's 2D supremacy.</p>
+                    <p>A 2D RPG/Beat-em-up hybrid and a testament to Saturn's 2D supremacy.<br><span class="release-date">Release: 1996</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/33/NightsIntoDreamsBox.jpg" alt="Nights into Dreams">
+                    <h3>Nights into Dreams...</h3>
+                    <p>Introduced the analog controller, changing how we navigate 3D spaces.<br><span class="release-date">Release: 1996</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Panzer_Dragoon_II_Zwei_cover_art.png" alt="Panzer Dragoon II">
+                    <h3>Panzer Dragoon II Zwei</h3>
+                    <p>An artistic triumph showcasing the Saturn's unique 3D capabilities.<br><span class="release-date">Release: 1996</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/ee/Saturn_Bomberman_cover_art.png" alt="Saturn Bomberman">
+                    <h3>Saturn Bomberman</h3>
+                    <p>The quintessential multiplayer party game on the Saturn platform.<br><span class="release-date">Release: 1996</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Shiningtheholyark.jpg" alt="Shining the Holy Ark">
+                    <h3>Shining the Holy Ark</h3>
+                    <p>A notable dungeon-crawling RPG that showcased the Saturn's CD-ROM potential.<br><span class="release-date">Release: 1996</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Sonic_R.jpg" alt="Sonic R">
+                    <h3>Sonic R</h3>
+                    <p>A unique Sonic racing experiment known for its soundtrack and character-based racing.<br><span class="release-date">Release: 1997</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Burning_Rangers_cover.jpg" alt="Burning Rangers">
+                    <h3>Burning Rangers</h3>
+                    <p>A cult 3D action title praised for its atmosphere and level design.<br><span class="release-date">Release: 1998</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/64/PanzerDragoonSagaBox.jpg" alt="Panzer Dragoon Saga">
+                    <h3>Panzer Dragoon Saga</h3>
+                    <p>A rare RPG masterpiece on Saturn, praised for its storytelling and visuals.<br><span class="release-date">Release: 1998</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Radiant_Silvergun_flyer.jpg" alt="Radiant Silvergun">
+                    <h3>Radiant Silvergun</h3>
+                    <p>A critically acclaimed shoot 'em up known for deep scoring and weapon systems.<br><span class="release-date">Release: 1998</span></p>
                 </div>
             </div>
         </section>
@@ -89,29 +296,79 @@
             <h2>Dreamcast Legends</h2>
             <div class="card-grid">
                 <div class="card">
-                    <img src="images/soulcalibur.webp" alt="SoulCalibur">
-                    <h3>SoulCalibur</h3>
-                    <p><strong>Historical Impact:</strong> A visual revolution where the console port looked better than the arcade.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Sonic_Adventure.PNG" alt="Sonic Adventure">
+                    <h3>Sonic Adventure</h3>
+                    <p>Brought Sonic into 3D with an ambitious, fast-paced platforming experience.<br><span class="release-date">Release: 1998</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/shenmue.webp" alt="Shenmue">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Power_Stone_Dreamcast.jpg" alt="Power Stone">
+                    <h3>Power Stone</h3>
+                    <p>Fast-paced arena fighter showcasing Dreamcast's local multiplayer strengths.<br><span class="release-date">Release: 1999</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/SegaBassFishing.png" alt="Sega Bass Fishing">
+                    <h3>Sega Bass Fishing</h3>
+                    <p>A surprise hit that demonstrated Dreamcast's varied arcade-style library.<br><span class="release-date">Release: 1999</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e2/ShenmueDCbox.jpg" alt="Shenmue">
                     <h3>Shenmue</h3>
-                    <p><strong>Historical Impact:</strong> Created the "FREE" genre, introducing modern open-world mechanics.</p>
+                    <p>Created the "FREE" genre, introducing modern open-world mechanics.<br><span class="release-date">Release: 1999</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/jetsetradio.webp" alt="Jet Set Radio">
-                    <h3>Jet Set Radio</h3>
-                    <p><strong>Historical Impact:</strong> Introduced Cel-Shading and urban style to the masses.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Soulcalibur_flyer.png" alt="SoulCalibur">
+                    <h3>SoulCalibur</h3>
+                    <p>A visual revolution where the console port looked better than the arcade.<br><span class="release-date">Release: 1999</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/pso.webp" alt="Phantasy Star Online">
-                    <h3>Phantasy Star Online</h3>
-                    <p><strong>Historical Impact:</strong> The pioneer of console MMORPGs and worldwide social connectivity.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f7/House_Of_The_Dead_2%2C_Thelogo.png" alt="The House of the Dead 2">
+                    <h3>The House of the Dead 2</h3>
+                    <p>A definitive arcade horror shooter with a strong Dreamcast presence.<br><span class="release-date">Release: 1999</span></p>
                 </div>
                 <div class="card">
-                    <img src="images/crazytaxi.webp" alt="Crazy Taxi">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/75/CrazyTaxi_cover.png" alt="Crazy Taxi">
                     <h3>Crazy Taxi</h3>
-                    <p><strong>Historical Impact:</strong> Pure arcade energy and licensed music defined the console's philosophy.</p>
+                    <p>Pure arcade energy and licensed music defined the console's philosophy.<br><span class="release-date">Release: 2000</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Jetsetradiopalboxart.jpg" alt="Jet Set Radio">
+                    <h3>Jet Set Radio</h3>
+                    <p>Introduced Cel-Shading and urban style to the masses.<br><span class="release-date">Release: 2000</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/NFL2K1_cover.jpg" alt="NFL 2K1">
+                    <h3>NFL 2K1</h3>
+                    <p>A standout sports title that helped define early 3D sports presentation on Dreamcast.<br><span class="release-date">Release: 2000</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Phantasy_Star_Online_cover_art_jp.png" alt="Phantasy Star Online">
+                    <h3>Phantasy Star Online</h3>
+                    <p>The pioneer of console MMORPGs and worldwide social connectivity.<br><span class="release-date">Release: 2000</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/44/RECV_boxart.jpg" alt="Resident Evil: Code Veronica">
+                    <h3>Resident Evil: Code Veronica</h3>
+                    <p>A high-profile survival-horror sequel that showcased console cinematic ambition.<br><span class="release-date">Release: 2000</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/65/ArcadiaDC.png" alt="Skies of Arcadia">
+                    <h3>Skies of Arcadia</h3>
+                    <p>A beloved JRPG known for its exploration, characters, and airborne adventure.<br><span class="release-date">Release: 2000</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/TTOTD_Packshot.jpeg" alt="Typing of the Dead">
+                    <h3>Typing of the Dead</h3>
+                    <p>A quirky, genre-bending take on The House of the Dead with unique gameplay.<br><span class="release-date">Release: 2000</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/7/71/RezBoxArt.jpg" alt="Rez">
+                    <h3>Rez</h3>
+                    <p>An experimental, synesthetic shooter praised for its audio-visual fusion.<br><span class="release-date">Release: 2001</span></p>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/9/99/Sonic_Adventure_2_cover.png" alt="Sonic Adventure 2">
+                    <h3>Sonic Adventure 2</h3>
+                    <p>A high-profile sequel with expanded hub worlds and character-driven stages.<br><span class="release-date">Release: 2001</span></p>
                 </div>
             </div>
         </section>

@@ -15,17 +15,77 @@
             <a href="archive.html">Archive</a> 
             <a href="gallery.html">Gallery</a> 
             <a href="ourpicks.html">Our Picks</a>
-            <a href="megadrive.html">Mega Drive</a>
-            <a href="saturn.html">Saturn</a>
-            <a href="dreamcast.html">Dreamcast</a>
+            <div class="nav-dropdown">
+                <button class="nav-dropbtn" type="button">Consoles</button>
+                <div class="nav-dropdown-content">
+                    <a href="megadrive.html">Mega Drive</a>
+                    <a href="saturn.html">Saturn</a>
+                    <a href="dreamcast.html">Dreamcast</a>
+                </div>
+            </div>
             <a href="about.html">About</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" style="padding: 3rem;">
             <h2 style="display: block; text-align: center; border: none; padding: 0; width: 100%;">Digital Preservation</h2>
-            <p>Sega Retro Portal 2026 is a mission-driven project dedicated to the history of SEGA consoles.</p>
+            <p>In the rapidly evolving landscape of interactive media, history is often at risk of being lost to time. Digital Preservation is our commitment to ensuring that the legacy of Sega, from the 16-bit "Blast Processing" of the Genesis to the visionary internet-ready Dreamcast remains accessible for future generations. We don't just archive files, we safeguard the art, code, and documentation that defined a cultural era. By fighting hardware obsolescence and "bit rot," this portal serves as a permanent sanctuary for the innovations that moved the industry forward.</p>
+        </section>
+
+        <section style="text-align: center;">
+            <h2>Why Sega Retro</h2>
+            <p>This site is a focused archive of Sega history, built to spotlight the hardware, the culture, and the key moments that shaped the medium. The goal is simple: keep the best stories easy to find, accurate, and enjoyable to explore.</p>
+        </section>
+
+        <section>
+            <h2>What You Will Find</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>News Archive</h3>
+                    <p>A year-by-year timeline of events and industry milestones, with source links for deeper reading.</p>
+                </div>
+                <div class="card">
+                    <h3>Hardware Vault</h3>
+                    <p>Spotlights on iconic devices, oddities, and the engineering ideas that pushed Sega forward.</p>
+                </div>
+                <div class="card">
+                    <h3>Gallery</h3>
+                    <p>A visual sweep of the era, from early system launches to the Dreamcast years.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Picks</h3>
+                    <p>Curated games that defined their platforms, selected for historical impact and influence.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Curation Principles</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Historical Impact</h3>
+                    <p>Entries are chosen for influence on design, technology, or culture.</p>
+                </div>
+                <div class="card">
+                    <h3>Source First</h3>
+                    <p>When possible, claims are backed by a public source or contemporary reference.</p>
+                </div>
+                <div class="card">
+                    <h3>Clarity</h3>
+                    <p>Short summaries, clean layouts, and consistent presentation across pages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="text-align: center;">
+            <h2>Update Rhythm</h2>
+            <p>New archive items and gallery updates are added as new sources are verified and curated.</p>
+        </section>
+
+        <section style="text-align: center;">
+            <h2>Credits and Sources</h2>
+            <p>Sources are linked where available. If you spot an error or missing credit, share the correction below.</p>
         </section>
 
         <section id="contact-section" style="display: flex; flex-direction: column; align-items: center; width: 100%; padding: 4rem 0;">
@@ -50,7 +110,7 @@
                     <textarea name="message" rows="6" required style="width: 100%; padding: 12px; background: #111; border: 1px solid #444; color: white;"></textarea>
                 </div>
                 
-                <button type="submit" class="submit-btn" style="width: 100%; padding: 15px; background: var(--accent); color: black; font-weight: bold; cursor: pointer;">Transmit Data</button>
+                <button type="submit" class="submit-btn" style="width: 100%; padding: 15px; background: var(--accent); color: black; font-weight: bold; cursor: pointer;">Transmit your Data!</button>
             </form>
         </section>
     </main>

@@ -15,19 +15,29 @@
             <a href="archive.html">Archive</a> 
             <a href="gallery.html">Gallery</a> 
             <a href="ourpicks.html">Our Picks</a>
-            <a href="megadrive.html">Mega Drive</a>
-            <a href="saturn.html">Saturn</a>
-            <a href="dreamcast.html">Dreamcast</a>
+            <div class="nav-dropdown">
+                <button class="nav-dropbtn" type="button">Consoles</button>
+                <div class="nav-dropdown-content">
+                    <a href="megadrive.html">Mega Drive</a>
+                    <a href="saturn.html">Saturn</a>
+                    <a href="dreamcast.html">Dreamcast</a>
+                </div>
+            </div>
             <a href="about.html">About</a>
         </nav>
     </header>
 
     <main>
-    <section class="featured-carousel" id="carousel-section">
-        <div id="carousel-track" class="carousel-viewport"></div>
-        <div class="carousel-nav">
-            <button id="prevBtn" class="nav-btn">◀</button>
-            <button id="nextBtn" class="nav-btn">▶</button>
+    <section class="carousel-box home-hero">
+        <div class="story-text carousel-title">
+            <h2>LATEST NEWS</h2>
+        </div>
+        <div class="featured-carousel">
+            <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>
+            <div class="carousel-viewport" id="carousel-track">
+                <!-- Latest 3 news items injected here -->
+            </div>
+            <button class="carousel-btn next-btn" id="nextBtn">&#10095;</button>
         </div>
     </section>
 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sega Retro | Archive Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-hero .carousel-title { border-bottom: none; }
+    </style>
 </head>
 <body>
     <header>
@@ -15,63 +18,243 @@
             <a href="archive.html">Archive</a> 
             <a href="gallery.html">Gallery</a> 
             <a href="ourpicks.html">Our Picks</a>
-            <a href="megadrive.html">Mega Drive</a>
-            <a href="saturn.html">Saturn</a>
-            <a href="dreamcast.html">Dreamcast</a>
+            <div class="nav-dropdown">
+                <button class="nav-dropbtn" type="button">Consoles</button>
+                <div class="nav-dropdown-content">
+                    <a href="megadrive.html">Mega Drive</a>
+                    <a href="saturn.html">Saturn</a>
+                    <a href="dreamcast.html">Dreamcast</a>
+                </div>
+            </div>
             <a href="about.html">About</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2 style="display: block; text-align: center; border: none; padding: 0; width: 100%;">Visions of the Arcade Age</h2>
-            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">
-                A visual curation capturing the aesthetics and culture of retro gaming.
-            </p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/Atari's National Space Invaders Championship, 1980
-.webp" alt="Kid Games">
-                    <span>Atari's National Space Invaders Championship, 1980
-</span>
+        <section class="media-gallery">
+            <div class="carousel-box gallery-hero">
+                <div class="carousel-title">
+                    <h2>Visions of the Arcade Age</h2>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/mallarcades.webp" alt="Mall Arcades">
-                    <span>Christmas 1980 – Me and my Atari 2600
-</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/Teenagers in an arcade, 1982.webp" alt="Room Playing">
-                    <span>Teenagers in an arcade, 1982</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/Mike Tyson playing his own video game 1987.webp" alt="Shopping Games">
-                    <span>Mike Tyson playing his own video game 1987</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/arcadesfamily.webp" alt="Arcades Family">
-                    <span>Family Arcade Experience</span>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/familygames.webp" alt="Family Games">
-                    <span>Home Console Gaming</span>
+                <div class="gallery-hero-image">
+                    <img src="images/visions.webp" alt="Gallery hero placeholder" loading="lazy">
                 </div>
             </div>
-        </section>
 
-        <section style="margin-top: 4rem; text-align: center;">
-            <div class="hero" style="padding: 2rem; border-color: rgba(0, 224, 255, 0.3);">
-                <h3>Want to share your retro goodies with us?</h3>
-                <p>Do you have any vintage photographs or rare screenshots from the Sega era?</p>
-                <a href="about.html#contact-section" style="color: var(--accent); text-decoration: none; font-weight: bold; border: 1px solid var(--accent); padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 1rem;">Send Memories</a>
+            <div class="year-gallery">
+                <div class="year-block">
+                    <h3>1985</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1985_sega_mark_iii.webp" alt="Sega Mark III" loading="lazy"><span>Sega Mark III</span></div>
+                        <div class="gallery-item"><img src="images/1985_space_harrier.webp" alt="Space Harrier" loading="lazy"><span>Space Harrier</span></div>
+                        <div class="gallery-item"><img src="images/1985_hang_on.webp" alt="Hang-On" loading="lazy"><span>Hang-On</span></div>
+                        <div class="gallery-item"><img src="images/1985_teddy_boy_blues.webp" alt="Teddy Boy Blues" loading="lazy"><span>Teddy Boy Blues</span></div>
+                        <div class="gallery-item"><img src="images/1985_doki_doki_penguin_land.webp" alt="Doki Doki Penguin Land" loading="lazy"><span>Doki Doki Penguin Land</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1986</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1986_master_system.webp" alt="Master System" loading="lazy"><span>Master System</span></div>
+                        <div class="gallery-item"><img src="images/1986_out_run.webp" alt="Out Run" loading="lazy"><span>Out Run</span></div>
+                        <div class="gallery-item"><img src="images/1986_alex_kidd.webp" alt="Alex Kidd in Miracle World" loading="lazy"><span>Alex Kidd in Miracle World</span></div>
+                        <div class="gallery-item"><img src="images/1986_fantasy_zone.webp" alt="Fantasy Zone" loading="lazy"><span>Fantasy Zone</span></div>
+                        <div class="gallery-item"><img src="images/1986_wonder_boy.webp" alt="Wonder Boy" loading="lazy"><span>Wonder Boy</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1987</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1987_phantasy_star.webp" alt="Phantasy Star" loading="lazy"><span>Phantasy Star</span></div>
+                        <div class="gallery-item"><img src="images/1987_shinobi_arcade.webp" alt="Shinobi (arcade)" loading="lazy"><span>Shinobi (arcade)</span></div>
+                        <div class="gallery-item"><img src="images/1987_after_burner_ii.webp" alt="After Burner II" loading="lazy"><span>After Burner II</span></div>
+                        <div class="gallery-item"><img src="images/1987_alien_syndrome.webp" alt="Alien Syndrome" loading="lazy"><span>Alien Syndrome</span></div>
+                        <div class="gallery-item"><img src="images/1987_zillion.webp" alt="Zillion" loading="lazy"><span>Zillion</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1988</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1988_mega_drive.webp" alt="Mega Drive" loading="lazy"><span>Mega Drive</span></div>
+                        <div class="gallery-item"><img src="images/1988_altered_beast.webp" alt="Altered Beast" loading="lazy"><span>Altered Beast</span></div>
+                        <div class="gallery-item"><img src="images/1988_power_drift.webp" alt="Power Drift" loading="lazy"><span>Power Drift</span></div>
+                        <div class="gallery-item"><img src="images/1988_galaxy_force_ii.webp" alt="Galaxy Force II" loading="lazy"><span>Galaxy Force II</span></div>
+                        <div class="gallery-item"><img src="images/1988_phantasy_star_ii.webp" alt="Phantasy Star II" loading="lazy"><span>Phantasy Star II</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1989</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1989_sega_genesis.webp" alt="Sega Genesis" loading="lazy"><span>Sega Genesis</span></div>
+                        <div class="gallery-item"><img src="images/1989_golden_axe.webp" alt="Golden Axe" loading="lazy"><span>Golden Axe</span></div>
+                        <div class="gallery-item"><img src="images/1989_revenge_of_shinobi.webp" alt="The Revenge of Shinobi" loading="lazy"><span>The Revenge of Shinobi</span></div>
+                        <div class="gallery-item"><img src="images/1989_super_hang_on.webp" alt="Super Hang-On" loading="lazy"><span>Super Hang-On</span></div>
+                        <div class="gallery-item"><img src="images/1989_ghouls_n_ghosts.webp" alt="Ghouls'n Ghosts" loading="lazy"><span>Ghouls'n Ghosts</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1990</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1990_game_gear.webp" alt="Game Gear" loading="lazy"><span>Game Gear</span></div>
+                        <div class="gallery-item"><img src="images/1990_castle_of_illusion.webp" alt="Castle of Illusion" loading="lazy"><span>Castle of Illusion</span></div>
+                        <div class="gallery-item"><img src="images/1990_columns.webp" alt="Columns" loading="lazy"><span>Columns</span></div>
+                        <div class="gallery-item"><img src="images/1990_moonwalker.webp" alt="Michael Jackson's Moonwalker" loading="lazy"><span>Michael Jackson's Moonwalker</span></div>
+                        <div class="gallery-item"><img src="images/1990_g_loc_air_battle.webp" alt="G-LOC Air Battle" loading="lazy"><span>G-LOC Air Battle</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1991</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1991_sonic_the_hedgehog.webp" alt="Sonic the Hedgehog" loading="lazy"><span>Sonic the Hedgehog</span></div>
+                        <div class="gallery-item"><img src="images/1991_sega_cd.webp" alt="Sega CD" loading="lazy"><span>Sega CD</span></div>
+                        <div class="gallery-item"><img src="images/1991_streets_of_rage.webp" alt="Streets of Rage" loading="lazy"><span>Streets of Rage</span></div>
+                        <div class="gallery-item"><img src="images/1991_toejam_and_earl.webp" alt="ToeJam and Earl" loading="lazy"><span>ToeJam and Earl</span></div>
+                        <div class="gallery-item"><img src="images/1991_quackshot.webp" alt="QuackShot" loading="lazy"><span>QuackShot</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1992</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1992_sonic_the_hedgehog_2.webp" alt="Sonic the Hedgehog 2" loading="lazy"><span>Sonic the Hedgehog 2</span></div>
+                        <div class="gallery-item"><img src="images/1992_virtua_racing.webp" alt="Virtua Racing" loading="lazy"><span>Virtua Racing</span></div>
+                        <div class="gallery-item"><img src="images/1992_ecco_the_dolphin.webp" alt="Ecco the Dolphin" loading="lazy"><span>Ecco the Dolphin</span></div>
+                        <div class="gallery-item"><img src="images/1992_shining_force.webp" alt="Shining Force" loading="lazy"><span>Shining Force</span></div>
+                        <div class="gallery-item"><img src="images/1992_streets_of_rage_2.webp" alt="Streets of Rage 2" loading="lazy"><span>Streets of Rage 2</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1993</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1993_virtua_fighter.webp" alt="Virtua Fighter" loading="lazy"><span>Virtua Fighter</span></div>
+                        <div class="gallery-item"><img src="images/1993_daytona_usa.webp" alt="Daytona USA" loading="lazy"><span>Daytona USA</span></div>
+                        <div class="gallery-item"><img src="images/1993_sonic_cd.webp" alt="Sonic CD" loading="lazy"><span>Sonic CD</span></div>
+                        <div class="gallery-item"><img src="images/1993_gunstar_heroes.webp" alt="Gunstar Heroes" loading="lazy"><span>Gunstar Heroes</span></div>
+                        <div class="gallery-item"><img src="images/1993_shinobi_iii.webp" alt="Shinobi III" loading="lazy"><span>Shinobi III</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1994</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1994_sega_saturn.webp" alt="Sega Saturn" loading="lazy"><span>Sega Saturn</span></div>
+                        <div class="gallery-item"><img src="images/1994_sega_32x.webp" alt="Sega 32X" loading="lazy"><span>Sega 32X</span></div>
+                        <div class="gallery-item"><img src="images/1994_sonic_3_and_knuckles.webp" alt="Sonic 3 and Knuckles" loading="lazy"><span>Sonic 3 and Knuckles</span></div>
+                        <div class="gallery-item"><img src="images/1994_virtua_cop.webp" alt="Virtua Cop" loading="lazy"><span>Virtua Cop</span></div>
+                        <div class="gallery-item"><img src="images/1994_panzer_dragoon.webp" alt="Panzer Dragoon" loading="lazy"><span>Panzer Dragoon</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1995</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1995_sega_nomad.webp" alt="Sega Nomad" loading="lazy"><span>Sega Nomad</span></div>
+                        <div class="gallery-item"><img src="images/1995_sega_rally.webp" alt="Sega Rally Championship" loading="lazy"><span>Sega Rally Championship</span></div>
+                        <div class="gallery-item"><img src="images/1995_virtua_fighter_2.webp" alt="Virtua Fighter 2" loading="lazy"><span>Virtua Fighter 2</span></div>
+                        <div class="gallery-item"><img src="images/1995_ristar.webp" alt="Ristar" loading="lazy"><span>Ristar</span></div>
+                        <div class="gallery-item"><img src="images/1995_comix_zone.webp" alt="Comix Zone" loading="lazy"><span>Comix Zone</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1996</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1996_nights_into_dreams.webp" alt="NiGHTS into Dreams" loading="lazy"><span>NiGHTS into Dreams</span></div>
+                        <div class="gallery-item"><img src="images/1996_guardian_heroes.webp" alt="Guardian Heroes" loading="lazy"><span>Guardian Heroes</span></div>
+                        <div class="gallery-item"><img src="images/1996_die_hard_arcade.webp" alt="Die Hard Arcade" loading="lazy"><span>Die Hard Arcade</span></div>
+                        <div class="gallery-item"><img src="images/1996_sakura_wars.webp" alt="Sakura Wars" loading="lazy"><span>Sakura Wars</span></div>
+                        <div class="gallery-item"><img src="images/1996_virtual_on.webp" alt="Virtual On" loading="lazy"><span>Virtual On</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1997</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1997_house_of_the_dead.webp" alt="The House of the Dead" loading="lazy"><span>The House of the Dead</span></div>
+                        <div class="gallery-item"><img src="images/1997_sonic_r.webp" alt="Sonic R" loading="lazy"><span>Sonic R</span></div>
+                        <div class="gallery-item"><img src="images/1997_last_bronx.webp" alt="Last Bronx" loading="lazy"><span>Last Bronx</span></div>
+                        <div class="gallery-item"><img src="images/1997_grandia.webp" alt="Grandia" loading="lazy"><span>Grandia</span></div>
+                        <div class="gallery-item"><img src="images/1997_enemy_zero.webp" alt="Enemy Zero" loading="lazy"><span>Enemy Zero</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1998</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1998_dreamcast.webp" alt="Dreamcast" loading="lazy"><span>Dreamcast</span></div>
+                        <div class="gallery-item"><img src="images/1998_sonic_adventure.webp" alt="Sonic Adventure" loading="lazy"><span>Sonic Adventure</span></div>
+                        <div class="gallery-item"><img src="images/1998_soulcalibur.webp" alt="Soulcalibur" loading="lazy"><span>Soulcalibur</span></div>
+                        <div class="gallery-item"><img src="images/1998_panzer_dragoon_saga.webp" alt="Panzer Dragoon Saga" loading="lazy"><span>Panzer Dragoon Saga</span></div>
+                        <div class="gallery-item"><img src="images/1998_house_of_the_dead_2.webp" alt="The House of the Dead 2" loading="lazy"><span>The House of the Dead 2</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>1999</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/1999_shenmue.webp" alt="Shenmue" loading="lazy"><span>Shenmue</span></div>
+                        <div class="gallery-item"><img src="images/1999_crazy_taxi.webp" alt="Crazy Taxi" loading="lazy"><span>Crazy Taxi</span></div>
+                        <div class="gallery-item"><img src="images/1999_chuchu_rocket.webp" alt="ChuChu Rocket!" loading="lazy"><span>ChuChu Rocket!</span></div>
+                        <div class="gallery-item"><img src="images/1999_samba_de_amigo.webp" alt="Samba de Amigo" loading="lazy"><span>Samba de Amigo</span></div>
+                        <div class="gallery-item"><img src="images/1999_zombie_revenge.webp" alt="Zombie Revenge" loading="lazy"><span>Zombie Revenge</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>2000</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/2000_jet_set_radio.webp" alt="Jet Set Radio" loading="lazy"><span>Jet Set Radio</span></div>
+                        <div class="gallery-item"><img src="images/2000_skies_of_arcadia.webp" alt="Skies of Arcadia" loading="lazy"><span>Skies of Arcadia</span></div>
+                        <div class="gallery-item"><img src="images/2000_phantasy_star_online.webp" alt="Phantasy Star Online" loading="lazy"><span>Phantasy Star Online</span></div>
+                        <div class="gallery-item"><img src="images/2000_space_channel_5.webp" alt="Space Channel 5" loading="lazy"><span>Space Channel 5</span></div>
+                        <div class="gallery-item"><img src="images/2000_resident_evil_code_veronica.webp" alt="Resident Evil Code: Veronica" loading="lazy"><span>Resident Evil Code: Veronica</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>2001</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/2001_sonic_adventure_2.webp" alt="Sonic Adventure 2" loading="lazy"><span>Sonic Adventure 2</span></div>
+                        <div class="gallery-item"><img src="images/2001_super_monkey_ball.webp" alt="Super Monkey Ball" loading="lazy"><span>Super Monkey Ball</span></div>
+                        <div class="gallery-item"><img src="images/2001_rez.webp" alt="Rez" loading="lazy"><span>Rez</span></div>
+                        <div class="gallery-item"><img src="images/2001_shenmue_ii.webp" alt="Shenmue II" loading="lazy"><span>Shenmue II</span></div>
+                        <div class="gallery-item"><img src="images/2001_virtua_fighter_4.webp" alt="Virtua Fighter 4" loading="lazy"><span>Virtua Fighter 4</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>2002</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/2002_jet_set_radio_future.webp" alt="Jet Set Radio Future" loading="lazy"><span>Jet Set Radio Future</span></div>
+                        <div class="gallery-item"><img src="images/2002_shinobi.webp" alt="Shinobi (2002)" loading="lazy"><span>Shinobi (2002)</span></div>
+                        <div class="gallery-item"><img src="images/2002_panzer_dragoon_orta.webp" alt="Panzer Dragoon Orta" loading="lazy"><span>Panzer Dragoon Orta</span></div>
+                        <div class="gallery-item"><img src="images/2002_gunvalkyrie.webp" alt="Gunvalkyrie" loading="lazy"><span>Gunvalkyrie</span></div>
+                        <div class="gallery-item"><img src="images/2002_house_of_the_dead_3.webp" alt="The House of the Dead III" loading="lazy"><span>The House of the Dead III</span></div>
+                    </div>
+                </div>
+
+                <div class="year-block">
+                    <h3>2003</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img src="images/2003_sonic_heroes.webp" alt="Sonic Heroes" loading="lazy"><span>Sonic Heroes</span></div>
+                        <div class="gallery-item"><img src="images/2003_f_zero_gx.webp" alt="F-Zero GX" loading="lazy"><span>F-Zero GX</span></div>
+                        <div class="gallery-item"><img src="images/2003_billy_hatcher.webp" alt="Billy Hatcher and the Giant Egg" loading="lazy"><span>Billy Hatcher and the Giant Egg</span></div>
+                        <div class="gallery-item"><img src="images/2003_virtua_fighter_4_evo.webp" alt="Virtua Fighter 4 Evolution" loading="lazy"><span>Virtua Fighter 4 Evolution</span></div>
+                        <div class="gallery-item"><img src="images/2003_otogi.webp" alt="Otogi: Myth of Demons" loading="lazy"><span>Otogi: Myth of Demons</span></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>// CHRONO-GALLERY SYNC COMPLETE // SEGA RETRO PORTAL 2026</footer>
-
-  
 
     <script src="script.js"></script>
 </body>
