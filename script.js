@@ -116,7 +116,7 @@ async function loadNewsPage() {
             if (!res.ok) return null;
             const data = await res.json();
             return data.image || null;
-        } catch (e) {
+        } catch {
             return null;
         }
     };
