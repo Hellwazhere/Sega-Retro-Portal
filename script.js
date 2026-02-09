@@ -13,6 +13,19 @@ document.addEventListener("DOMContentLoaded", () => {
     setupModalEvents();
 });
 
+async function getHistoryData() {
+    if (window.historyData && typeof window.historyData === "object") {
+        return window.historyData;
+    }
+
+    const res = await fetch("history.json", { cache: "no-store" });
+    if (!res.ok) {
+        throw new Error(`History fetch failed: ${res.status}`);
+    }
+
+    return res.json();
+}
+
 function injectModal() {
     const modalHTML = `
         <div id="imageModal" class="modal">
@@ -68,8 +81,7 @@ function setupModalEvents() {
 async function loadHistory() {
     const archiveList = document.getElementById("archive-list");
     try {
-        const res = await fetch('history.json');
-        const data = await res.json();
+        const data = await getHistoryData();
         const years = Object.keys(data).sort((a, b) => b - a);
         archiveList.innerHTML = years.map(year => `
             <div class="archive-year-block">
@@ -86,7 +98,12 @@ async function loadHistory() {
                     `).join('')}</ul>
                 </div>
             </div>`).join('');
-    } catch (e) { console.error("Archive error", e); }
+    } catch (e) {
+        console.error("Archive error", e);
+        if (archiveList) {
+            archiveList.textContent = "Archive data could not be loaded. If you opened this page directly from disk, run a local server.";
+        }
+    }
 }
 
 async function loadNewsPage() {
@@ -105,8 +122,7 @@ async function loadNewsPage() {
     };
 
     try {
-        const res = await fetch('history.json');
-        const data = await res.json();
+        const data = await getHistoryData();
         
         // Collector todos os entries de todos os anos e ordenar da mais recente para a mais antiga
         let allNews = Object.keys(data)
@@ -226,7 +242,15 @@ async function loadNewsPage() {
             // O restante vai para a grelha (grid)
             gridContainer.innerHTML = allNews.slice(3).map(i => renderItem(i, false)).join('');
         }
-    } catch (e) { console.error("Erro ao carregar notícias:", e); }
+    } catch (e) {
+        console.error("Erro ao carregar notícias:", e);
+        if (carouselTrack) {
+            carouselTrack.innerHTML = "<div class=\"carousel-slide\"><div class=\"carousel-overlay\"><h3>News feed unavailable</h3><p>Run a local server or check your data file.</p></div></div>";
+        }
+        if (gridContainer) {
+            gridContainer.textContent = "News could not be loaded. If you opened this page directly from disk, run a local server.";
+        }
+    }
 }
 
 function initCarouselLogic() {
